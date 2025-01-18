@@ -1,0 +1,21 @@
+{
+  "shared": {
+    "components": {
+      "organisms": {
+        "navBar": {
+          "links": {
+            "login": "Anmelden",
+            "logout": "Abmelden",
+            "register": "Registrieren",
+            "dashboard": "Dashboard"
+          }
+        }
+      },
+      "pages": {
+        "landingPage": {
+          "title": "Willkommen bei Test-App"
+        }
+      }
+    }
+  }
+}

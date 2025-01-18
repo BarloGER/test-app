@@ -1,0 +1,19 @@
+{
+  "shared": {
+    "components": {
+      "organisms": {
+        "navBar": {
+          "links": {
+            "login": "Login",
+            "register": "Register"
+          }
+        }
+      },
+      "pages": {
+        "landingPage": {
+          "title": "Welcome to Test-App"
+        }
+      }
+    }
+  }
+}

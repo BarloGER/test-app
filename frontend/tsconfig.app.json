@@ -2,6 +2,8 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
 
     /* Linting */
     "strict": true,
@@ -9,6 +11,22 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
+  },
+  "baseUrl": "./src",
+  "paths": {
+    "@shared/components/*": ["./shared/components/*"],
+    "@shared/configs/*": ["./shared/configs/*"],
+    "@shared/entities/*": ["./shared/entities/*"],
+    "@shared/locales/*": ["./shared/locales/*"],
+    "@shared/layouts/*": ["./shared/layouts/*"],
+    "@shared/utils/*": ["./shared/utils/*"],
+
+    "@features/authentication/components/*": [
+      "./features/authentication/components/*"
+    ],
+    "@features/authentication/services/*": [
+      "./features/authentication/services/*"
+    ]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
