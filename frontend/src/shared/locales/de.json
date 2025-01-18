@@ -1,4 +1,19 @@
 {
-  "hello": "Hallo!",
-  "welcome": "Willkommen auf unserer Webseite"
+  "shared": {
+    "components": {
+      "organisms": {
+        "navBar": {
+          "links": {
+            "login": "Anmelden",
+            "register": "Registrieren"
+          }
+        }
+      },
+      "pages": {
+        "landingPage": {
+          "title": "Willkommen bei Test-App"
+        }
+      }
+    }
+  }
 }

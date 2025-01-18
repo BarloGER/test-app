@@ -1,12 +1,10 @@
 <script setup lang="ts">
+  import {NavBar} from "@shared/components/organisms";
 </script>
 
 <template>
   <header>
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <NavBar/>
   </header>
   <main>
     <router-view />
@@ -16,19 +14,5 @@
 <style scoped>
 header {
   height: 50px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: large;
-  margin-right: 1rem;
-  gap: 1rem;
-}
-
-router-link {
-  text-decoration: none;
-  margin-right: 1rem;
 }
 </style>

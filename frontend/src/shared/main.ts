@@ -1,11 +1,11 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import { router } from "./shared/routes/router"
+import { router } from "./router.ts"
 import {createI18n} from 'vue-i18n';
-// TODO: Error beseitigen
-import en from './shared/locales/en.json'
-import de from './shared/locales/de.json'
+// TODO: Import error beseitigen
+import en from '@shared/locales/en.json'
+import de from '@shared/locales/de.json'
 
 const i18n = createI18n({
     legacy: false,

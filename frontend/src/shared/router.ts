@@ -1,11 +1,13 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
-import HomeView from '../components/HomeView.vue'
-import AboutView from '../components/AboutView.vue'
+//TODO: Import error beseitigen
+import {LandingPage} from "@shared/components/pages";
+import {LoginPage, RegisterPage} from '@features/authentication/components/pages'
 
 const routes = [
-    { path: '/', component: HomeView },
-    { path: '/about', component: AboutView },
+    { path: '/', component: LandingPage },
+    { path: '/login', component: LoginPage },
+    { path: '/register', component: RegisterPage },
 ]
 
 export const router = createRouter({
