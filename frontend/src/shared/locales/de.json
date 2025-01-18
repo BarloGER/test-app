@@ -5,7 +5,9 @@
         "navBar": {
           "links": {
             "login": "Anmelden",
-            "register": "Registrieren"
+            "logout": "Abmelden",
+            "register": "Registrieren",
+            "dashboard": "Dashboard"
           }
         }
       },

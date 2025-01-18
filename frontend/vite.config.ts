@@ -22,6 +22,10 @@ export default defineConfig({
           __dirname,
           './src/features/authentication/components'
       ),
+      '@features/authentication/services': path.resolve(
+          __dirname,
+          './src/features/authentication/services'
+      ),
     },
   },
 })

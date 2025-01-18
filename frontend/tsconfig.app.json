@@ -24,6 +24,9 @@
     "@features/authentication/components/*": [
       "./features/authentication/components/*"
     ],
+    "@features/authentication/services/*": [
+      "./features/authentication/services/*"
+    ]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
