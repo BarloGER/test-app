@@ -11,10 +11,10 @@ const error = ref('')
 const isLoading = ref(false)
 
 async function handleLogin() {
-  // if (!email.value || !password.value) {
-  //   error.value = t("features.authentication.login.errors.missingValues")
-  //   return
-  // }
+  if (!email.value || !password.value) {
+    error.value = t("features.authentication.login.errors.missingValues")
+    return
+  }
 
   isLoading.value = true
   error.value = ''

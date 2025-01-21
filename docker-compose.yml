@@ -7,9 +7,7 @@ services:
     ports:
       - "5173:5173"
     volumes:
-      # Falls du im Live-Entwicklungsmodus direkt Änderungen am Code möchtest:
       - ./frontend:/frontend
-      # Damit node_modules nicht überschrieben wird (oder in Dev auch weglassen):
       - /frontend/node_modules
     command: ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
 
