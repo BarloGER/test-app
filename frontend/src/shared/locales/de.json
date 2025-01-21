@@ -17,5 +17,42 @@
         }
       }
     }
+  },
+
+  "features": {
+    "authentication": {
+
+      "login": {
+        "title": "Anmelden",
+        "success": "Anmeldung erfolgreich.",
+        "failed": "Die Anmeldung ist fehlgeschlagen.",
+        "labels": {
+          "login": "Anmelden",
+          "email": "E-Mail",
+          "password": "Passwort"
+        },
+        "errors": {
+          "missingValues": "Bitte Email und Passwort angeben.",
+          "unknownError": "Beim Anmelden ist ein unbekannter Fehler aufgetreten."
+        }
+      },
+      "register": {
+        "title": "Registrieren",
+        "success": "Registrierung erfolgreich, du kannst dich jetzt anmelden.",
+        "failed": "Die Registrierung ist fehlgeschlagen.",
+        "labels": {
+          "login": "Registrieren",
+          "username": "Benutzername",
+          "email": "E-Mail",
+          "password": "Passwort",
+          "repeatPassword": "Passwort wiederholen"
+        },
+        "errors": {
+          "missingValues": "Bitte alle Felder ausfüllen.",
+          "passwordMatch": "Die Passwörter stimmen nicht überein.",
+          "unknownError": "Beim Registrieren ist ein unbekannter Fehler aufgetreten."
+        }
+      }
+    }
   }
 }

@@ -2,7 +2,11 @@
   import { useI18n } from 'vue-i18n';
   import { authState, logout } from '@features/authentication/services'
 
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
+
+  const changeLanguage = (lang: string) => {
+    locale.value = lang;
+  };
 </script>
 
 <template>
@@ -22,6 +26,11 @@
     <button v-if="authState.isAuthenticated" @click="logout()">
       {{ t("shared.components.organisms.navBar.links.logout") }}
     </button>
+
+    <select @change="changeLanguage($event.target.value)" class="language-switch">
+      <option value="en" :selected="locale === 'en'">English</option>
+      <option value="de" :selected="locale === 'de'">Deutsch</option>
+    </select>
   </nav>
 </template>
 
