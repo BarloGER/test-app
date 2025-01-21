@@ -5,13 +5,52 @@
         "navBar": {
           "links": {
             "login": "Login",
-            "register": "Register"
+            "logout": "Logout",
+            "register": "Register",
+            "dashboard": "Dashboard"
           }
         }
       },
       "pages": {
         "landingPage": {
           "title": "Welcome to Test-App"
+        }
+      }
+    }
+  },
+
+  "features": {
+    "authentication": {
+
+      "login": {
+        "title": "Login",
+        "success": "Login successful.",
+        "failed": "Login failed.",
+        "labels": {
+          "login": "Login",
+          "email": "Email",
+          "password": "Password"
+        },
+        "errors": {
+          "missingValues": "Please provide email and password.",
+          "unknownError": "An unknown error occurred while logging in."
+        }
+      },
+      "register": {
+        "title": "Register",
+        "success": "Registration successful, you can now log in.",
+        "failed": "Registration failed.",
+        "labels": {
+          "login": "Register",
+          "username": "Username",
+          "email": "Email",
+          "password": "Password",
+          "repeatPassword": "Repeat Password"
+        },
+        "errors": {
+          "missingValues": "Please fill in all fields.",
+          "passwordMatch": "Passwords do not match.",
+          "unknownError": "An unknown error occurred during registration."
         }
       }
     }
